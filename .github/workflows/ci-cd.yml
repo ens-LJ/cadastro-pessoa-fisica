@@ -32,7 +32,7 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-            - name: Debug (temporário) - checar tamanho dos secrets
+      - name: Debug (temporário) - checar tamanho dos secrets
         run: |
           echo "Tamanho do username: $(echo -n "${{ secrets.DOCKERHUB_USERNAME }}" | wc -c)"
           echo "Tamanho do token: $(echo -n "${{ secrets.DOCKERHUB_TOKEN }}" | wc -c)"
